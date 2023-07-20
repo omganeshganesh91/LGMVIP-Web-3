@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Student Enrollment Form</h2>
+        <form id="registration-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="website">Website:</label>
+            <input type="url" id="website" name="website" required />
+          </div>
+          <div class="form-group">
+            <label for="image">Image link:</label>
+            <input type="url" id="image" name="image" required />
+          </div>
+          <div class="form-group">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="skills"><u>Skills:</u></label>
+            <input type="checkbox" id="Javascript" name="skills" value="Javascript" />
+            <label for="Javascript">Javascript</label>
+            <input type="checkbox" id="HTML" name="skills" value="HTML" />
+            <label for="HTML">HTML</label>
+            <input type="checkbox" id="" name="skills" value="HTML" />
+            <label for="CSS">CSS</label>
+          </div>
+          <button type="submit" class="submit-button">Enroll Student</button>
+          <button type="reset" class="clear-button">Clear</button>
+        </form>
+      </div>
+      <div class="card-container" id="card-container">
+        <h2>Enrolled Students</h2>
+      </div>
+    </div>
+
+    <script src="script.jsx"></script>
+  </body>
+</html>
